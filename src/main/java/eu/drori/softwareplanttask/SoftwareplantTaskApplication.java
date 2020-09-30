@@ -8,15 +8,10 @@ import org.springframework.scheduling.annotation.EnableAsync;
 
 @SpringBootApplication
 @EnableAsync
-public class SoftwareplantTaskApplication extends SpringBootServletInitializer {
+public class SoftwareplantTaskApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(SoftwareplantTaskApplication.class, args);
-	}
-
-	@Override
-	protected SpringApplicationBuilder configure(SpringApplicationBuilder application) {
-		return application.sources(SoftwareplantTaskApplication.class);
 	}
 
 }
